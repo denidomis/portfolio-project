@@ -8,6 +8,8 @@ body {
 body,
 body * {
   color: white !important;
+  font-style: normal !important;
+  font-family: "Poppins" !important;
 }
 
 header {
@@ -84,10 +86,6 @@ hero,
 #projects-head {
   margin: 0 10%;
   margin-top: 5%;
-}
-
-i {
-  font-style: normal;
 }
 
 .next-line {
@@ -283,4 +281,68 @@ i {
   list-style-type: none;
   white-space: nowrap;
   padding-bottom: 20px;
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#aboutme h1 {
+  margin-left: 4%;
+  margin-bottom: 10%;
+}
+
+.about-me i {
+  display: inline-block;
+  text-align: left;
+  justify-content: center;
+  width: 50%;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.profile-images {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.image1 {
+  position: relative;
+}
+
+.image2 {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  font-weight: 100;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+footer div:nth-child(2) {
+  margin-left: -30%;
+}
+
+footer div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer div:last-child a {
+  height: 35px;
+  width: 35px;
 }
