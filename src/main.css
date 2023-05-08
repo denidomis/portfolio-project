@@ -13,9 +13,12 @@ body * {
 }
 
 header {
-  width: 70%;
+  background-color: #12203d;
+  top: 0;
+  position: sticky;
+  width: 100%;
   display: flex;
-  justify-content: space-between !important;
+  justify-content: space-around !important;
   align-items: center;
   gap: 10px;
 }
