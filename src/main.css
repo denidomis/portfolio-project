@@ -1,0 +1,143 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0f1624;
+}
+
+body,
+body * {
+  color: white !important;
+}
+
+header {
+  width: 70%;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-logo {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+.main-logo::before {
+  content: url("./icons/portfolio_icon.svg");
+  padding-right: 1em;
+}
+
+#header-list {
+  list-style-type: none;
+  margin: 0;
+  padding-inline: 10px;
+  overflow: hidden;
+}
+
+#header-list li {
+  float: left;
+}
+
+#header-list li a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+#header-list li a:hover {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-underline-position: under;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.github-logo {
+  content: url("./icons/github-icon.svg");
+  display: inline-block;
+  padding-inline: 1.5em;
+}
+
+.linkedin-logo {
+  content: url("./icons/linkedin-icon.svg");
+  display: inline-block;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+  margin-top: 5%;
+}
+
+main > * {
+  display: block;
+}
+
+hero,
+#projects-head {
+  margin: 0 10%;
+  margin-top: 5%;
+}
+i {
+  font-style: normal;
+}
+
+hero hr {
+  border: none;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.button {
+  background-image: linear-gradient(
+    to right,
+    rgb(212, 49, 212),
+    rgb(0, 153, 255)
+  );
+  border-radius: 25px;
+  border: none;
+  color: white;
+  padding: 10px;
+  padding-inline: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.project1 {
+  display: flex;
+  border: 2px solid grey;
+  border-radius: 50px 0px 50px 0px;
+  padding: 3%;
+}
+
+.project11 h2 {
+  text-align: center;
+  position: relative;
+}
+
+.project11 h2::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(45deg, rgb(212, 49, 212), rgb(0, 153, 255)) 1;
+  margin-top: 5px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.project1 image {
+  display: block;
+  justify-content: right;
+  border-radius: 0px 0px 0px 50px;
+}
